@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Page settings -->
+    <meta charset="UTF-8">
+
+    <!-- Make the page fit the screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Personal Profile Website</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- Top part -->
+    <header>
+
+        <!-- Main title -->
+        <h1>My Personal Profile Website</h1>
+
+        <!-- Page menu -->
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#skill">SKILLS</a>
+            <a href="#myprojects">MY PROJECTS</a>
+        </nav>
+
+    </header>
+
+    <!-- Main page -->
+    <main>
+
+        <!-- Home -->
+        <section id="home">
+
+            <!-- My picture -->
+            <img src="IMG_20260813_112017_725@1767951633.jpg"
+                 alt="Justin Dave C. Baino">
+
+            <h2>Who am I?</h2>
+
+            <!-- About me -->
+            <p>
+                I am Justin Dave C. Biano, a 20 year old student of Mountain Province State University currently 
+                enrrolled in Bachelors of Science and Information Technology.
+            </p>
+            <p>
+                I'm from Cada, Balili, Mankayan, Benguet.
+                I chose Information Technology because I want to
+                improve my skills in technology.
+            </p>
+        </section>
+
+        <!-- My hobbies -->
+        <section id="hobbies">
+
+            <h2>MY HOBBIES</h2>
+
+            <!-- Sports -->
+            <p>
+                <input type="checkbox" id="sports">
+                <label for="sports">SPORTS</label>
+            </p>
+
+            <!-- Dancing -->
+            <p>
+                <input type="checkbox" id="dancing">
+                <label for="dancing">DANCING</label>
+            </p>
+
+            <!-- Sleeping -->
+            <p>
+                <input type="checkbox" id="sleeping">
+                <label for="sleeping">SLEEPING</label>
+            </p>
+
+            <!-- Eating -->
+            <p>
+                <input type="checkbox" id="eating">
+                <label for="eating">EATING</label>
+            </p>
+
+            <!-- Swimming -->
+            <p>
+                <input type="checkbox" id="swimming">
+                <label for="swimming">SWIMMING</label>
+            </p>
+
+        </section>
+        <section class="otot">
+            <h2>CONTACT</h2>
+                <strong>Facebook:</strong>
+                    <a href="https://www.Facebook.com/" target="_blank">JustinDaveFB</a>
+
+                <br></br>
+                <h3>Message me...^_'</h3>
+                <textarea placeholder="Write your message here....."></textarea>
+
+                <br><br>
+
+                <!-- Buttons -->
+                <button type="submit">SUBMIT</button>
+                <button type="reset">RESET</button>
+
+                <!-- Show message -->
+                <p id="message"></p>
+        </section>
+
+        <!-- Contact -->
+         <section id="contact">
+
+            <h2>Fill up the form: </h2>
+
+            <!-- Contact form -->
+            <form id="contactForm">
+
+                <!-- Name -->
+                <label for="fullname">Full Name: </label>
+                <input type="text" id="fullname" required>
+                <br></br>
+                <!-- Email -->
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" required>
+                <br></br>
+                <!-- Password -->
+                <label for="password">Password: </label>
+                <input type="password" id="password" required>
+                <br></br>
+                <!-- Phone number -->
+                <label for="mobile">Mobile Number: </label>
+                <input type="tel" id="mobile" required>
+                <br></br>
+                <!-- Course -->
+                <label for="course">COURSE</label>
+
+                <select id="course" required>
+
+                    <option value="">Select Course</option>
+
+                    <option value="BSIT">
+                        Bachelor of Science in Information Technology
+                    </option>
+
+                </select>
+        </section>
+            </form>
+        </section>
+
+        <!-- My skills -->
+        <section id="skill">
+            <h2>MY SKILLS</h2>
+            <p>Web Development</p>
+            <p>Programming</p>
+            <p>Problem Solving</p>
+            <p>HTML and CSS</p>
+
+        </section>
+         <section class="rawr">
+            <section class="meow">
+                <h1>My Projects</h1>
+            </section>
+
+            <div class="container">
+            <div class="Okay">
+                <img src="image1.png">
+                <h3>Personal Website</h3>
+                <p>Description:</p>
+                <p>A very simple website about personal profile.</p>
+            </div>
+            <div class="Yes">
+                <img src="image2.png">
+                <h3>Logo</h3>
+                <p>Description:</p>
+                <p>A simple logo created using Photoshop.</p>
+            </div>
+            <div class="No">
+                <img src="image3.jpg">
+                <h3>Image Blending</h3>
+                <p>Description:</p>
+                <p>Using raw image and any type of superhero characters that the goal is to combine them together.</p>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom part -->
+    <footer>
+
+        <p>
+            &copy; 2026 Justin Dave C. Baino. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Code for the buttons -->
+    <script>
+
+        // Get the form
+        var form = document.getElementById("contactForm");
+
+        // Get the message
+        var message = document.getElementById("message");
+
+        // When Submit is clicked
+        form.onsubmit = function(event) {
+
+            event.preventDefault();
+
+            message.innerHTML = "Submitted!";
+            message.style.color = "green";
+
+        };
+
+        // When Reset is clicked
+        form.onreset = function() {
+
+            message.innerHTML = "Completely Reset!";
+            message.style.color = "red";
+
+        };
+
+    </script>
+
+
+
+
+</body>
+</html>

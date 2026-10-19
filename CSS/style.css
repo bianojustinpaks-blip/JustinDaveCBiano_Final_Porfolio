@@ -1,0 +1,189 @@
+/* Style for the whole page */
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    margin: 0;
+}
+
+/* Style for the top part */
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for the profile picture */
+#home img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Style for the menu links */
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Change link color when the mouse is on it */
+nav a:hover {
+    color: red;
+}
+
+/* Set the size of the main content */
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* Style for each part of the page */
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Style for the headings */
+h2 {
+    color: blue;
+}
+
+/* Style for the input boxes */
+input {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+/* Style for the course box */
+select {
+    padding: 8px;
+}
+#skill p{
+    text-align: center;
+    border: 2px solid black;
+    width: 150px;
+    height: 25px;
+}
+#skill p:hover{
+    background-color: white;
+    border-color: blue;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.otot{
+    background-color:white;
+    color: black;
+    padding: 20px;
+}
+
+/* Style for the buttons */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    border: none;
+}
+
+/* Make the submit button green */
+button[type="submit"] {
+    background-color: green;
+}
+
+/* Make the reset button red */
+button[type="reset"] {
+    background-color: red
+}
+button:hover{
+    border-color: lime;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the bottom part */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* Style for all*/
+.rawr {
+    width: 100%;
+}
+/* Style for the my project text*/
+.meow {
+    text-align: center;
+    padding: 15px;
+}
+/* Style for the font color and the underline*/
+.meow h1 {
+    color: blue;
+    text-decoration: underline solid purple;
+    text-decoration-thickness: 3px;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+/* Style for the border under my projects*/
+.Okay,
+.Yes,
+.No {
+    /* display: flex; */
+    /* flex-direction: column; */
+    vertical-align: top;
+    width: 350px;
+    height: 370px;
+    margin: 30px 1.4%;
+    padding: 25px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+    transition: 0.3s;
+}
+/* Style for all images inside my projects*/
+.Okay img,
+.Yes img,
+.No img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25%;
+    border: 3px solid green;
+    transition: 0.3s;
+}
+/* Style for all the fonts under my projects*/
+.Okay h3,
+.Yes h3,
+.No h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+/* Style for all the fonts under my projects*/
+.Okay p,
+.Yes p,
+.No p {
+    margin: 8px;
+}
+/* Style for hovers under my projects*/
+.Okay:hover,
+.Yes:hover,
+.No:hover {
+    background-color: white;
+    border-color: lime;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+/* Style for hovers for images inside my projects*/
+.Okay:hover img,
+.Yes:hover img,
+.No:hover img {
+    border-color: green;
+}   
